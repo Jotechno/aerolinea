@@ -7,7 +7,7 @@ app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'public', 'views'));
 
 // Ruta para renderizar la página disponibilidad.hbs
-app.get('/disponibilidad', (req, res) => {
+app.get('/', (req, res) => {
   res.render('disponibilidad');
 });
 
