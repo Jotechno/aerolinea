@@ -24,7 +24,7 @@ const validateDates = () => {
     let errorMessage = '';
 
     if (departingDate <= currentDate) {
-        errorMessage = 'La fecha de salida debe ser igual o posterior a la fecha actual.';
+        errorMessage = 'La fecha de salida debe ser posterior a la fecha actual.';
     } else if (departingDate > returningDate) {
         errorMessage = 'La fecha de salida no puede ser posterior a la fecha de regreso';
     }
